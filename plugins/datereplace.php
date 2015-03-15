@@ -54,7 +54,7 @@ class datereplace extends phplistPlugin
    */
   function parseOutgoingTextMessage($messageid, $content, $destination, $userdata = null) {
     $datestring = getConfig('datereplace_datestring');
-    $content = str_replace("[DATE]", $datestring, $content);
+    $content = str_replace("[DATE]", date($datestring), $content);
     return $content;
   }
 
@@ -68,7 +68,7 @@ class datereplace extends phplistPlugin
    */
   function parseOutgoingHTMLMessage($messageid, $content, $destination, $userdata = null) {
     $datestring = getConfig('datereplace_datestring');
-    $content = str_replace("[DATE]", $datestring, $content);
+    $content = str_replace("[DATE]", date($datestring), $content);
     return $content;
   }
 }
