@@ -22,7 +22,7 @@ class datereplace extends phplistPlugin
 {
   public $name = "DateReplace plugin for phpList";
   public $coderoot = "datereplace/";
-  public $version = "0.3";
+  public $version = "1.0";
   public $description = 'Replaces [DATE] with the current date in email messages';
   public $settings = array(
     "datereplace_datestring" => array (
