@@ -22,12 +22,12 @@ class datereplace extends phplistPlugin
 {
   public $name = "DateReplace plugin for phpList";
   public $coderoot = "datereplace/";
-  public $version = "0.2";
+  public $version = "0.3";
   public $description = 'Replaces [DATE] with the current date in email messages';
   public $settings = array(
     "datereplace_datestring" => array (
       'value' => "F j, Y",
-      'description' => "Datestring to replace [DATE] with, as defined at <a href='http://php.net/manual/en/function.date.php'>http://php.net/manual/en/function.date.php</a>. <br/> The default value is 'F j, Y', which translates [DATE] into 'March 6, 2015'",
+      'description' => "PHP Datestring to replace [DATE] with.",
       'type' => "text",
       'allowempty' => 0,
       "max" => 1000,
